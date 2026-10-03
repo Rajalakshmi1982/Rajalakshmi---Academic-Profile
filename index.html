@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rajalakshmi P | Computer Science Academic</title>
+
+  <meta name="description"
+        content="Academic profile of Rajalakshmi P, Assistant Professor in Computer Science, pursuing Ph.D. in Medical Imaging, with research interests in AI, Machine Learning, Data Science and Quantum Computing.">
+
+  <style>
+    :root {
+      --primary: #17365d;
+      --secondary: #2563a6;
+      --accent: #0f766e;
+      --light: #f4f7fb;
+      --white: #ffffff;
+      --dark: #1f2937;
+      --muted: #64748b;
+      --border: #dbe3ec;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--dark);
+      background: var(--light);
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--primary);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    }
+
+    .nav-container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 0 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 65px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #b9e4ff;
+      text-decoration: none;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #17365d, #2563a6);
+      color: white;
+      padding: 90px 25px;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: 400;
+      color: #dbeafe;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      font-size: 17px;
+      color: #e5eef9;
+    }
+
+    .profile-box {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 3px solid rgba(255,255,255,0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+      font-size: 70px;
+      font-weight: 700;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 22px;
+      border-radius: 6px;
+      background: white;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 25px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 4px;
+      background: var(--accent);
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-text {
+      font-size: 17px;
+      max-width: 900px;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .card .date {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #b8c9dc;
+      padding-left: 28px;
+    }
+
+    .timeline-item {
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--secondary);
+      left: -36px;
+      top: 7px;
+      border: 3px solid var(--light);
+    }
+
+    .timeline-item h3 {
+      color: var(--primary);
+    }
+
+    .timeline-item .date {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* Skills */
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .skill-list li {
+      background: #e8f0fa;
+      color: var(--primary);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* Research */
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .research-item {
+      background: white;
+      padding: 25px 15px;
+      text-align: center;
+      border-radius: 10px;
+      border-top: 4px solid var(--accent);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Publication */
+    .publication {
+      background: white;
+      padding: 30px;
+      border-left: 5px solid var(--accent);
+      border-radius: 7px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .publication-title {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    /* Patent */
+    .patent {
+      background: linear-gradient(135deg, #eef7f6, #ffffff);
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #cce5e2;
+    }
+
+    .patent h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .patent-number {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 7px 13px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* FDP */
+    .fdp-list {
+      list-style: none;
+    }
+
+    .fdp-list li {
+      background: white;
+      margin-bottom: 12px;
+      padding: 17px 20px;
+      border-radius: 7px;
+      border-left: 4px solid var(--secondary);
+    }
+
+    .fdp-list strong {
+      color: var(--primary);
+    }
+
+    /* Contact */
+    .contact {
+      background: var(--primary);
+      color: white;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact .section-title::after {
+      background: #5eead4;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.08);
+      padding: 22px;
+      border-radius: 8px;
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #a7f3d0;
+    }
+
+    .contact a {
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #0f2743;
+      color: #cbd5e1;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 18px;
+      }
+
+      .hero {
+        padding: 65px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Rajalakshmi P</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#patent">Patent</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-content">
+
+    <div>
+      <h1>Rajalakshmi P</h1>
+
+      <h2>
+        Assistant Professor | Computer Science & Engineering
+      </h2>
+
+      <p>
+        Academic Computer Science professional with extensive experience
+        in teaching, curriculum development, student mentoring and academic
+        administration. Currently pursuing a Ph.D. in Computer Science
+        with a research focus on Medical Imaging, Artificial Intelligence
+        and Machine Learning.
+      </p>
+
+      <div class="buttons">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#research" class="btn secondary">Research Profile</a>
+      </div>
+    </div>
+
+    <div class="profile-box">
+      RP
+    </div>
+
+  </div>
+</header>
+
+
+<!-- About -->
+<section id="about" class="about">
+  <div class="container">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p class="about-text">
+      I am a Computer Science academician with experience across higher
+      education and school-level computer science education. I currently
+      serve as an Assistant Professor in the Department of Computer
+      Science and Engineering at Saveetha Engineering College.
+    </p>
+
+    <br>
+
+    <p class="about-text">
+      I am pursuing a Ph.D. in Computer Science with a research focus on
+      Medical Imaging. My academic interests include Deep Learning,
+      Machine Learning, Data Science, Artificial Intelligence and
+      Quantum Computing. I am passionate about integrating emerging
+      technologies into teaching, research and curriculum development.
+    </p>
+
+    <br>
+
+    <p class="about-text">
+      My professional experience includes teaching undergraduate and
+      postgraduate students, academic planning, curriculum development,
+      project guidance, student mentoring and departmental leadership.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- Education -->
+<section id="education">
+  <div class="container">
+
+    <h2 class="section-title">Academic Qualifications</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Ph.D. – Computer Science & Engineering</h3>
+        <div class="date">2025 – 2028 | Pursuing</div>
+        <p>
+          Anna University
+        </p>
+        <p>
+          Research Area: Medical Imaging
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>M.E. – Computer Science & Engineering</h3>
+        <div class="date">2013 – 2015</div>
+        <p>
+          SVCT, Anna University
+        </p>
+        <p>
+          First Class with Distinction
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>B.Tech – Information Technology</h3>
+        <div class="date">2000 – 2004</div>
+        <p>
+          Dr. NNCE, University of Madras
+        </p>
+        <p>
+          First Class with Distinction
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Experience -->
+<section id="experience" class="about">
+  <div class="container">
+
+    <h2 class="section-title">Academic & Professional Experience</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Assistant Professor – Computer Science & Engineering</h3>
+        <div class="date">January 2025 – Present</div>
+        <p>
+          <strong>Saveetha Engineering College</strong>
+        </p>
+        <p>
+          Teaching undergraduate courses, guiding student projects,
+          academic planning and mentoring.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>HOD / PGT – Computer Science</h3>
+        <div class="date">June 2022 – December 2024</div>
+        <p>
+          <strong>Velammal Bodhi Campus</strong>
+        </p>
+        <p>
+          Department leadership, teaching Python and SQL, academic
+          planning and student mentoring.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>PGT – Computer Science</h3>
+        <div class="date">April 2021 – May 2022</div>
+        <p>
+          <strong>Pon Vidyashram Group of CBSE Schools</strong>
+        </p>
+        <p>
+          Computer Science teaching and student evaluation.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>PGT – Computer Science</h3>
+        <div class="date">April 2016 – March 2018</div>
+        <p>
+          <strong>Swamys CBSE School</strong>
+        </p>
+        <p>
+          Programming instruction and student mentoring.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Assistant Professor</h3>
+        <div class="date">September 2010 – March 2013</div>
+        <p>
+          <strong>Sri Venkateswara College of Technology</strong>
+        </p>
+        <p>
+          Undergraduate and postgraduate teaching and curriculum design.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Lecturer – Information Technology</h3>
+        <div class="date">March 2008 – July 2009</div>
+        <p>
+          <strong>Apollo Engineering College</strong>
+        </p>
+        <p>
+          Teaching and academic support.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Junior Programmer cum Faculty</h3>
+        <div class="date">November 2005 – September 2007</div>
+        <p>
+          <strong>Accord Info Matrix</strong>
+        </p>
+        <p>
+          Java training, course design and real-time project guidance.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Project Developer cum Faculty</h3>
+        <div class="date">June 2004 – July 2005</div>
+        <p>
+          <strong>Progress and Aero Computers</strong>
+        </p>
+        <p>
+          C programming training, course design and real-time project
+          guidance.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Research -->
+<section id="research">
+  <div class="container">
+
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="research-grid">
+      <div class="research-item">Medical Imaging</div>
+      <div class="research-item">Artificial Intelligence</div>
+      <div class="research-item">Deep Learning</div>
+      <div class="research-item">Machine Learning</div>
+      <div class="research-item">Data Science</div>
+      <div class="research-item">Quantum Computing</div>
+      <div class="research-item">Computer Programming</div>
+      <div class="research-item">AI in Healthcare</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Technical Skills -->
+<section class="about">
+  <div class="container">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <h3 style="color:#17365d; margin-bottom:12px;">
+      Programming
+    </h3>
+
+    <ul class="skill-list">
+      <li>Python</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>Java</li>
+    </ul>
+
+    <br>
+
+    <h3 style="color:#17365d; margin-bottom:12px;">
+      Database
+    </h3>
+
+    <ul class="skill-list">
+      <li>SQL</li>
+      <li>MySQL</li>
+    </ul>
+
+    <br>
+
+    <h3 style="color:#17365d; margin-bottom:12px;">
+      Web & Academic Tools
+    </h3>
+
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>JavaScript</li>
+      <li>MS Office</li>
+      <li>Google Classroom</li>
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- Publication -->
+<section id="publications">
+  <div class="container">
+
+    <h2 class="section-title">Publication</h2>
+
+    <div class="publication">
+
+      <div class="publication-title">
+        Hybrid Classifier with Modified Wiener Filter for Brain Cancer Prediction
+      </div>
+
+      <p>
+        Rajalakshmi E et al.,
+        "Hybrid Classifier with Modified Wiener Filter for Brain Cancer
+        Prediction," in <em>2025 International Conference on Engineering
+        Innovations and Technologies (ICoEIT)</em>, Chennai, India,
+        2024.
+      </p>
+
+      <br>
+
+      <p>
+        <strong>DOI:</strong>
+        10.1109/ICEIT6137698.2025.11211655
+      </p>
+
+      <br>
+
+      <a
+        href="https://ieeexplore.ieee.org/document/11211655"
+        target="_blank"
+        rel="noopener noreferrer">
+        View publication on IEEE Xplore →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Patent -->
+<section id="patent" class="about">
+  <div class="container">
+
+    <h2 class="section-title">Patent</h2>
+
+    <div class="patent">
+
+      <h3>
+        Quantum Computing Enabled Medical Image Reconstruction System
+      </h3>
+
+      <p>
+        <strong>Indian Patent Application No.:</strong>
+        202641098953 A
+      </p>
+
+      <p>
+        <strong>Filing Date:</strong>
+        16 August 2026
+      </p>
+
+      <p>
+        <strong>Publication Date:</strong>
+        21 August 2026
+      </p>
+
+      <p>
+        <strong>Applicant:</strong>
+        Saveetha Engineering College
+      </p>
+
+      <p>
+        <strong>Inventors:</strong>
+        Dr. R. Umamaheswari, Mrs. A. Thava Vinu,
+        Dr. Priyadharshini S, Mr. Premnath K,
+        Mrs. Rajalakshmi P
+      </p>
+
+      <span class="patent-number">
+        Application No. 202641098953 A
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FDP -->
+<section>
+  <div class="container">
+
+    <h2 class="section-title">
+      Faculty Development Programmes
+    </h2>
+
+    <ul class="fdp-list">
+
+      <li>
+        <strong>Future Ready Academia: AI, Cybersecurity and Quantum
+        Technologies for the Next Digital Era</strong><br>
+        Society for Intelligent Systems | September 2026
+      </li>
+
+      <li>
+        <strong>Recent Advancements and Challenges in Integration of
+        IoT and 5G/6G Wireless Communication – Building the Next Gen
+        Technology</strong><br>
+        Kongunadu College of Engineering and Technology | February 2025
+      </li>
+
+      <li>
+        <strong>Next Gen AI: Unlocking Future Opportunities Across
+        Academia and Industry</strong><br>
+        Department of IT, St. Joseph College of Engineering | August 2025
+      </li>
+
+      <li>
+        <strong>Agentic AI and Gen Models – Future of Healthcare</strong><br>
+        SCOPE, Vellore Institute of Technology | November 2025
+      </li>
+
+      <li>
+        <strong>Emerging Paradigms in AI: Advancing AI Frontier Trends
+        in Research and Industry Applications</strong><br>
+        Department of CSE, Aalim Muhammed Salegh College of Engineering |
+        December 2025
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- NPTEL -->
+<section class="about">
+  <div class="container">
+
+    <h2 class="section-title">Professional Development</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>NPTEL</h3>
+        <p>
+          Programming, Data Structures and Algorithms Using Python
+        </p>
+        <p>
+          <strong>Score:</strong> 76%
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>NPTEL – Ongoing</h3>
+        <p>
+          Learning Analytics
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Core Competencies -->
+<section>
+  <div class="container">
+
+    <h2 class="section-title">Core Competencies</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Teaching & Learning</h3>
+        <p>
+          Strong teaching and presentation skills, curriculum development,
+          student mentoring and academic engagement.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Academic Leadership</h3>
+        <p>
+          Department coordination, academic planning, curriculum delivery
+          and student project guidance.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Technology Integration</h3>
+        <p>
+          Integration of modern technologies including AI, Machine
+          Learning and Data Science concepts into teaching and curriculum.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Research & Innovation</h3>
+        <p>
+          Research interests spanning Medical Imaging, AI/ML, Data Science
+          and emerging Quantum Computing technologies.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <strong>Email</strong>
+        <a href="mailto:rajalakshmielangovan8@gmail.com">
+          rajalakshmielangovan8@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <strong>Current Position</strong>
+        Assistant Professor – Computer Science & Engineering
+      </div>
+
+      <div class="contact-card">
+        <strong>Institution</strong>
+        Saveetha Engineering College
+      </div>
+
+      <div class="contact-card">
+        <strong>Location</strong>
+        Chennai, Tamil Nadu, India
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>
+    © 2026 Rajalakshmi P. Academic Computer Science Professional.
+  </p>
+
+  <p style="margin-top:5px;">
+    Research interests: Medical Imaging • AI/ML • Data Science •
+    Quantum Computing
+  </p>
+</footer>
+
+</body>
+</html>
